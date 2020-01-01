@@ -1,20 +1,21 @@
 //
-//  ViewController.swift
-//  CairoICT2020
+//  GalleryVC.swift
+//  Gallery
 //
 //  Created by User on 1/1/20.
 //  Copyright © 2020 Adel. All rights reserved.
 //
 
 import UIKit
-import Gallery
 
-class ViewController: UIViewController {
+open class GalleryVC: UIViewController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-}
 
+
+}

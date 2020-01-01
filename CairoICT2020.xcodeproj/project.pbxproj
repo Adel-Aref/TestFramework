@@ -13,6 +13,10 @@
 		CEAD373323BCBEBB00FEA6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAD373223BCBEBB00FEA6AE /* Assets.xcassets */; };
 		CEAD373623BCBEBB00FEA6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAD373423BCBEBB00FEA6AE /* LaunchScreen.storyboard */; };
 		CEAD374123BCBEBB00FEA6AE /* CairoICT2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD374023BCBEBB00FEA6AE /* CairoICT2020Tests.swift */; };
+		CEAD37C623BCE0F500FEA6AE /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD379E23BCCD7500FEA6AE /* Gallery.framework */; };
+		CEAD37C723BCE0F500FEA6AE /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD379E23BCCD7500FEA6AE /* Gallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEAD37C923BCE12300FEA6AE /* SponsorFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD37C823BCE10200FEA6AE /* SponsorFeature.framework */; };
+		CEAD37CA23BCE12300FEA6AE /* SponsorFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD37C823BCE10200FEA6AE /* SponsorFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEAD379B23BCCCF600FEA6AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEAD37CA23BCE12300FEA6AE /* SponsorFeature.framework in Embed Frameworks */,
+				CEAD37C723BCE0F500FEA6AE /* Gallery.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CEAD372823BCBEB900FEA6AE /* CairoICT2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CairoICT2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAD372B23BCBEB900FEA6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +55,8 @@
 		CEAD373C23BCBEBB00FEA6AE /* CairoICT2020Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CairoICT2020Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAD374023BCBEBB00FEA6AE /* CairoICT2020Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CairoICT2020Tests.swift; sourceTree = "<group>"; };
 		CEAD374223BCBEBB00FEA6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAD379E23BCCD7500FEA6AE /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gallery.framework; path = "../../Library/Developer/Xcode/DerivedData/CairoICT2020-exssmsknzhyxlwdhtbkvmkqjavbb/Build/Products/Debug-iphoneos/Gallery.framework"; sourceTree = "<group>"; };
+		CEAD37C823BCE10200FEA6AE /* SponsorFeature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SponsorFeature.framework; path = "../../Library/Developer/Xcode/DerivedData/CairoICT2020-exssmsknzhyxlwdhtbkvmkqjavbb/Build/Products/Debug-iphoneos/SponsorFeature.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAD37C923BCE12300FEA6AE /* SponsorFeature.framework in Frameworks */,
+				CEAD37C623BCE0F500FEA6AE /* Gallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +82,7 @@
 		CEAD371F23BCBEB900FEA6AE = {
 			isa = PBXGroup;
 			children = (
+				CEAD379D23BCCD6800FEA6AE /* Frameworks */,
 				CEAD372A23BCBEB900FEA6AE /* CairoICT2020 */,
 				CEAD373F23BCBEBB00FEA6AE /* CairoICT2020Tests */,
 				CEAD372923BCBEB900FEA6AE /* Products */,
@@ -96,6 +120,15 @@
 			path = CairoICT2020Tests;
 			sourceTree = "<group>";
 		};
+		CEAD379D23BCCD6800FEA6AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAD37C823BCE10200FEA6AE /* SponsorFeature.framework */,
+				CEAD379E23BCCD7500FEA6AE /* Gallery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +139,7 @@
 				CEAD372423BCBEB900FEA6AE /* Sources */,
 				CEAD372523BCBEB900FEA6AE /* Frameworks */,
 				CEAD372623BCBEB900FEA6AE /* Resources */,
+				CEAD379B23BCCCF600FEA6AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRAQF9DBBS;
+				DEVELOPMENT_TEAM = 2C5GA3P469;
 				INFOPLIST_FILE = CairoICT2020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRAQF9DBBS;
+				DEVELOPMENT_TEAM = 2C5GA3P469;
 				INFOPLIST_FILE = CairoICT2020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
